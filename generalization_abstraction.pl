@@ -14,9 +14,9 @@ test(C, K, W):-
   format('~n---Atoms 2 : ~w', [Atoms2]),
   build_matrix(Atoms1, Atoms2, Matrix),
   generalization(K, W, Matrix, [], Generalization),
-  format('~n----Généralisation : ~w', [Generalization]),
+  format('~n----Generalization: ~w', [Generalization]),
   sequence(Generalization, Sequence),
-  format('~n----Sequence : ~w', [Sequence]),
+  format('~n----Sequence: ~w', [Sequence]),
   exists_best_sequence(Matrix, Sequence, Output),
   sequence(Output, SequenceO),
   format('~n------>Found generalization ~w~n------>with sequence ~w', [Output, SequenceO])
